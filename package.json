@@ -1,0 +1,19 @@
+{
+  "name": "kirenpaul.info",
+  "version": "1.0.0",
+  "description": "profile webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulkiren/kirenpaul.info.git"
+  },
+  "author": "Kiren Paul",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulkiren/kirenpaul.info/issues"
+  },
+  "homepage": "https://github.com/paulkiren/kirenpaul.info#readme"
+}
