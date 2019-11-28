@@ -1,0 +1,17 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Kirenpaul.info",
+	"scope" : "/",
+	"display" : "browser",
+	"start_url" : "https://kirenpaul.info/",
+	"short_name" : "Kirenpaul.info",
+	"theme_color" : "transparent",
+	"description" : "",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [],
+	"generated" : "true"
+}
