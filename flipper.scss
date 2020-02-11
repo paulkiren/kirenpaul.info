@@ -1,0 +1,58 @@
+$letters: 10;
+$charcol:#333;
+$blue:#75cfff;
+$canary:#fff47a;
+
+@keyframes flip {
+    from {
+        transform: rotateX(0deg);
+    }
+
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Graduate);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800;
+    padding: 100px 0;
+    background: $blue;
+}
+
+.flipper {
+    height: 3em;
+    margin: auto;
+    padding: 5px;
+    background: darken($blue, 5%);
+    border: 3px solid darken($blue, 10%);
+    border-radius: 5px;
+}
+
+[class^='flipletter-'] {
+    display: inline-block;
+    width: 3em;
+    border-radius: 5px;
+    color: $canary;
+    background: $charcol linear-gradient(to bottom, lighten($charcol, 10%) 50%, transparent 50%);
+    font: normal bold 100%/3em 'Graduate', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    transform-style: preserve-3d;
+    animation: flip .5s 1 ease-in-out;
+    backface-visibility: hidden;
+
+    &:before {}
+
+    &:after {}
+}
+
+@for $i from 0 through ($letters - 1) {
+    .flipletter-#{$i + 1} {
+        animation-delay: 0s + $i/12;
+    }
+}
